@@ -1,3 +1,4 @@
+import 'package:estudo_inheritedwidget/data/lista_data.dart';
 import 'package:estudo_inheritedwidget/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomePage(),);
+    return ListaData(child: MaterialApp(home: HomePage(),));
   }
 }
 
